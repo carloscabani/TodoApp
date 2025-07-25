@@ -23,7 +23,48 @@ const initStore = () => {
     console.log('Store initialized');
 }
 
+const loadStore = () => {
+    throw new Error('loadStore is not implemented');
+}
+
+/**
+ * 
+ * @param {String} description 
+ */
+
+const addTodo = (description) => {
+    throw new Error('loadStore is not implemented');
+}
+
+
+const toggleTodo = (todoId) => {
+    throw new Error('loadStore is not implemented');
+}
+
+
+const deleteTodo = (todoId) => {
+    throw new Error('loadStore is not implemented');
+}
+
+
+const deleteCompleted = () => {
+    throw new Error('loadStore is not implemented');
+}
+
+const setFilter = (newFilter = Filters.All) => {
+    throw new Error('loadStore is not implemented');
+}
+
+const getCurrentFilter = (newFilter = Filters.All) => {
+    throw new Error('loadStore is not implemented');
+}
 
 export default {
+    deleteCompleted,
+    deleteTodo,
+    getCurrentFilter,
     initStore,
+    loadStore,
+    setFilter,
+    toggleTodo,
 }
