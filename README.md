@@ -17,7 +17,7 @@ Este proyecto sirve como práctica de los siguientes temas:
 
 ## 📷 Vista previa
 
-![Vista previa de la aplicación](<img width="712" height="578" alt="image" src="https://github.com/user-attachments/assets/ab8f5982-0865-4b8f-8163-560449d5430b" />)
+![Vista previa de la aplicación](./cc4905a3-4e1d-4dfd-9f23-e58dd380c606.png)
 
 ## 🚀 Funcionalidades
 
