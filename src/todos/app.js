@@ -7,6 +7,7 @@ import { Todo } from './models/todo.model.js';
 const ElementIDs = {
     TodoList: '.todo-list',
     NewTodoInput: '#new-todo-input',
+    ClearerCompletedButton: '.clear-completed',
 }
 /**
  * 
@@ -30,7 +31,7 @@ export const App = (elementId) => {
     //referencias html
     const newDescriptionInput = document.querySelector(ElementIDs.NewTodoInput);
     const todoListUL = document.querySelector(ElementIDs.TodoList);
-
+    const clearCompletedButton = document.querySelector(ElementIDs.ClearerCompletedButton);
 
 
 
@@ -59,6 +60,13 @@ export const App = (elementId) => {
         displayTodos();
 
     });
+
+    clearCompletedButton.addEventListener('click', () => {
+        todoStore.deleteCompleted();
+        displayTodos();
+    });
+
+
 
 
 }
