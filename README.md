@@ -17,7 +17,7 @@ Este proyecto sirve como práctica de los siguientes temas:
 
 ## 📷 Vista previa
 
-![Vista previa de la aplicación](./cc4905a3-4e1d-4dfd-9f23-e58dd380c606.png)
+![Vista previa de la aplicación](./vistaPrevia.png)
 
 ## 🚀 Funcionalidades
 
@@ -47,6 +47,7 @@ Este proyecto sirve como práctica de los siguientes temas:
 4. Abre tu navegador y visita:
    ```bash
    http://localhost:5173
+   ```
 
 
 
