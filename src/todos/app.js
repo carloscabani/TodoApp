@@ -8,6 +8,7 @@ const ElementIDs = {
     TodoList: '.todo-list',
     NewTodoInput: '#new-todo-input',
     ClearerCompletedButton: '.clear-completed',
+    TodoFilters: '.filtro',
 }
 /**
  * 
@@ -32,7 +33,7 @@ export const App = (elementId) => {
     const newDescriptionInput = document.querySelector(ElementIDs.NewTodoInput);
     const todoListUL = document.querySelector(ElementIDs.TodoList);
     const clearCompletedButton = document.querySelector(ElementIDs.ClearerCompletedButton);
-
+    const filtersLIs = document.querySelectorAll(ElementIDs.TodoFilters);
 
 
     //Listeners 
@@ -66,7 +67,28 @@ export const App = (elementId) => {
         displayTodos();
     });
 
+    filtersLIs.forEach( element => {
 
+        element.addEventListener('click', (element) => {
+            filtersLIs.forEach(el => el.classList.remove('selected'));
+            element.target.classList.add('selected');
+
+            switch (element.target.text) {
+                case 'Todos':
+                    todoStore.setFilter(todoStore.Filters.All);
+                    break;
+                case 'Pendientes':
+                    todoStore.setFilter(todoStore.Filters.Pending);
+                    break;
+                case 'Completados':
+                    todoStore.setFilter(todoStore.Filters.Completed);
+                    break;
+            }
+
+            displayTodos();
+
+        });
+    });
 
 
 }

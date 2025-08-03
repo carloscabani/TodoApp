@@ -295,7 +295,7 @@ body {
 	padding: 0;
 	list-style: none;
 	position: absolute;
-	right: 0;
+	right: 50px;
 	left: 0;
 }
 
@@ -327,6 +327,7 @@ html .clear-completed:active {
 	line-height: 20px;
 	text-decoration: none;
 	cursor: pointer;
+	margin-left: 100px;
 }
 
 .clear-completed:hover {
